@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fact List</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="logo.png"
+            height="68px"
+            width="68"
+            alt="Today I Learned Logo"
+          />
+          <h1>Today I Learned</h1>
+        </div>
+        <button class="btn btn-large btn-open">Share A Fact</button>
+      </header>
+
+      <form class="fact-form hidden">
+        <input type="text" placeholder="Share a fact with the world" />
+        <span>200</span>
+        <input type="text" placeholder="Trustworthy source" />
+        <select>
+          <option value="">Choose Category</option>
+          <option value="technology">Technology</option>
+          <option value="Science">Science</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+
+      <main class="main">
+        <aside>
+          <ul>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category">Stuff</button>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <ul class="facts-list">
+            <li class="fact">
+              <p>
+                React And Blah Blah here is a paragraph
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="tag" style="background-color: #3b82f6">Tech</span>
+              <div class="vote-buttons">
+                <button>Like</button>
+                <button>Love</button>
+                <button>Hate</button>
+              </div>
+            </li>
+            <li class="fact">
+              <p>Eventually I know I will pull this from the Data SOurce</p>
+              <span class="tag" style="background-color: #eab308">Society</span>
+              <div class="vote-buttons">
+                <button>Like</button>
+                <button>Love</button>
+                <button>Hate</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
